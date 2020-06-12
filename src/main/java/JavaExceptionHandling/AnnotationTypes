@@ -1,0 +1,96 @@
+Java annotations are metadata (data about data) for our program source code.
+
+1. Predefined annotations
+
+@Deprecated
+The@Deprecated annotation is a marker annotation that indicates the element
+(class, method, field, etc) is deprecated and has been
+replaced by a newer element.
+
+@Override
+The @Override annotation specifies that a method of a subclass overrides
+the method of the superclass with the same method name, return type,
+and parameter list.
+
+@SuppressWarnings
+As the name suggests, the @SuppressWarnings annotation instructs
+the compiler to suppress warnings that are generated while the program
+executes.
+We can specify the type of warnings to be suppressed.
+The warnings that can be suppressed are compiler-specific but there
+are two categories of warnings: deprecation and unchecked.
+
+@SafeVarargs
+The @SafeVarargs annotation asserts that the annotated method or
+constructor does not perform unsafe operations on its varargs
+(variable number of arguments).
+We can only use this annotation on methods or constructors that
+cannot be overridden. This is because the methods that override
+them might perform unsafe operations.
+Before Java 9, we could use this annotation only on final or
+static methods because they cannot be overridden.
+We can now use this annotation for private methods as well.
+
+@FunctionalInterface
+Java 8 first introduced this @FunctionalInterface annotation.
+This annotation indicates that the type declaration on which it is used
+is a functional interface. A functional interface can have only one
+abstract method.
+
+2. Custom annotations
+It is also possible to create our own custom annotations.
+
+Its syntax is:
+
+""[Access Specifier] @interface<AnnotationName> {
+  DataType <Method Name>() [default value];
+}""
+
+Annotations can be created by using @interface followed by the annotation name.
+The annotation can have elements that look like methods but they do not have an implementation.
+The default value is optional. The parameters cannot have a null value.
+The return type of the method can be primitive, enum, string, class name or array of these types.
+
+3. Meta-annotations
+
+@Retention
+The @Retention annotation specifies the level up to which
+the annotation will be available.
+
+RetentionPolicy.SOURCE - The annotation is available only at the source
+level and is ignored by the compiler.
+
+RetentionPolicy.CLASS - The annotation is available to the compiler at
+compile-time, but is ignored by the Java Virtual Machine (JVM).
+
+RetentionPolicy.RUNTIME - The annotation is available to the JVM.
+
+@Documented
+By default, custom annotations are not included in the
+official Java documentation. To include our annotation in the
+Javadoc documentation, we use the @Documented annotation.
+
+@Target
+We can restrict an annotation to be applied to specific targets
+using the @Target annotation.
+
+The ElementType can have one of the following types:
+
+Element Type	Target
+ElementType.ANNOTATION_TYPE	Annotation type
+ElementType.CONSTRUCTOR 	Constructors
+ElementType.FIELD 	Fields
+ElementType.LOCAL_VARIABLE 	Local variables
+ElementType.METHOD 	Methods
+ElementType.PACKAGE 	Package
+ElementType.PARAMETER 	Parameter
+ElementType.TYPE 	Any element of class
+
+@Inherited
+By default, an annotation type cannot be inherited from a superclass.
+However, if we need to inherit an annotation from a superclass to a subclass,
+we use the @Inherited annotation.
+
+@Repeatable
+An annotation that has been marked by
+@Repeatable can be applied multiple times to the same declaration.

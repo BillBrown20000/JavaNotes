@@ -1,0 +1,40 @@
++	Addition (also used for string concatenation)
+-	Subtraction Operator
+*	Multiplication Operator
+/	Division Operator
+%	Remainder Operator
+
++	Unary plus (not necessary to use since numbers are positive without using it)
+-	Unary minus: inverts the sign of an expression
+++	Increment operator: increments value by 1
+--	decrement operator: decrements value by 1
+!	Logical complement operator: inverts the value of a boolean
+
+==	equal to	5 == 3 is evaluated to false
+!=	not equal to	5 != 3 is evaluated to true
+>	greater than	5 > 3 is evaluated to true
+<	less than	5 < 3 is evaluated to false
+>=	greater than or equal to	5 >= 5 is evaluated to true
+<=	less than or equal to	5 <= 5 is evaluated to true
+
+||	conditional-OR: true if either of the boolean expression is true	false || true is evaluated to true
+&&	conditional-AND: true if all boolean expressions are true	false && true is evaluated to false
+
+~	Bitwise Complement
+<<	Left Shift
+>>	Right Shift
+>>>	Unsigned Right Shift
+&	Bitwise AND
+^	Bitwise exclusive OR
+|	Bitwise inclusive OR
+
++=	x += 5	x = x + 5
+-=	x -= 5	x = x - 5
+*=	x *= 5	x = x * 5
+/=	x /= 5	x = x / 5
+%=	x %= 5	x = x % 5
+<<=	x <<= 5	x = x << 5
+>>=	x >>= 5	x = x >> 5
+&=	x &= 5	x = x & 5
+^=	x ^= 5	x = x ^ 5
+|=	x |= 5	x = x | 5

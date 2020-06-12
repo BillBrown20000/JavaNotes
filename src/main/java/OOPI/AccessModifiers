@@ -1,0 +1,31 @@
+Whats an access modifier?
+In Java, access modifiers are used to set the accessibility
+(visibility) of classes,
+interfaces, variables, methods, constructors, data members,
+and the setter methods.
+
+There are four access modifiers keywords in Java and they are:
+Default
+Private
+Protected
+Public
+
+Default Am
+If we do not explicitly specify any access modifier for
+classes, methods, variables, etc,
+then by default the default access modifier is considered.
+
+Private Am
+When variables and methods are declared private,
+they cannot be accessed outside of the class.
+What if we need to access those private variables.
+we can use the getters and setters method
+
+Protected Am
+When methods and data members are declared protected,
+we can access them within the same package as well as from subclasses.
+
+Public
+When methods, variables, classes, and so on are declared public,
+then we can access them from anywhere.
+The public access modifier has no scope restriction.

@@ -1,0 +1,5 @@
+The TreeMap class of the Java collections framework provides the
+tree data structure implementation.
+
+It implements the NavigableMap interface.
+

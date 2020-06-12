@@ -1,0 +1,23 @@
+Java is an object-oriented programming language.
+It is based on the concept of objects.
+These objects share two characteristics:
+state (fields)
+behavior (methods)
+You can think of a class as a blueprint for the object
+
+for example
+class Lamp {
+
+  // instance variable
+  private boolean isOn;
+
+  // method
+  public void turnOn() {
+    isOn = true;
+  }
+
+  // method
+  public void turnOff() {
+  	isOn = false;
+  }
+}

@@ -1,0 +1,47 @@
+In mathematics, we might have studied about functions.
+Similarly, in computer programming, a
+function is a block of code that performs a specific task.
+
+In object-oriented programming, the method is a jargon used for function.
+Methods are bound to a class and they define the behavior of a class.
+
+Depending on whether a method is defined by the user, or available in the standard library, there are two types of methods in Java:
+
+Standard Library Methods
+The standard library methods are built-in methods in Java
+that are readily available for use.
+These standard libraries come along with the Java Class Library (JCL)
+in a Java archive (*.jar) file with JVM and JRE.
+
+User-defined Methods
+We can also create methods of our own choice to perform some task.
+Such methods are called user-defined methods.
+
+modifier -
+It defines access types whether the method is public, private and so on.
+static -
+If we use the static keyword, it can be accessed without creating objects.
+
+returnType -
+It specifies what type of value a method returns For example if a
+method has int return type then it returns an integer value.
+
+A method can return native data types (int, float, double, etc),
+native objects (String, Map, List, etc), or any other
+built-in and user-defined objects.
+
+If the method does not return a value, its return type is void.
+
+nameOfMethod -
+It is an identifier that is used to refer
+to the particular method in a program.
+
+We can give any name to a method. However, it is
+more conventional to name it after the tasks it performs.
+For example, calculateArea(), display(), and so on.
+
+parameters (arguments) - These are values passed to a method.
+We can pass any number of arguments to a method.
+
+method body - It includes the programming statements that are used to perform
+some tasks. The method body is enclosed inside the curly braces { }.

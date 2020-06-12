@@ -1,0 +1,22 @@
+What is a constructor
+In Java, every class has its constructor that is
+invoked automatically when an object of the class is created.
+A constructor is similar to a method but in actual, it is not a method.
+
+In Java, constructors can be divided into 3 types:
+
+No-Arg Constructor
+A Java constructor may or may not have any parameters (arguments).
+If a constructor does not accept any parameters,
+it is known as a no-arg constructor. For example,
+
+Default Constructor
+If you do not create any constructors, the Java compiler
+will automatically create a no-argument constructor during run-time.
+This constructor is known as the default constructor. The default
+constructor initializes any uninitialized instance variables with
+default values.
+
+Parameterized Constructor
+Similar to methods, we can pass parameters to a constructor.
+ Such constructors are known as a parameterized constructor.
